@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://www.jqwidgets.com/public/jqwidgets/styles/jqx.base.css" type="text/css" />
+    <script type="text/javascript" src="https://www.jqwidgets.com/public/jqwidgets/jqx-all.js"></script>
+    <link rel="stylesheet" href="https://www.jqwidgets.com/public/jqwidgets/styles/jqx.arctic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="/home/qwinix/Documents/Hobbess/styles/hob.css">
+    <!-- <script>
+       $("#calendar").jqxCalendar({theme: "arctic", width:250, height:250});}
+    </script> -->
+
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default ">
+      <div class="container-fluid">
+        <ul class=" nav navbar-nav navbar-header">
+          <li class="hamb">
+            <span class="glyphicon glyphicon-menu-hamburger "></span>
+          </li>
+          <li class="head">Community</li>
+          <li>
+            <img src="images/image.png" id = "img-cnt" alt = "qhub" class="responsive">
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="bell"><span class="glyphicon glyphicon-bell"></span></li>
+          <li class="out"><span class="glyphicon glyphicon-log-out"></span> Logout</li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-8 col-sm-8 col-md-8 ">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 ">
+              <div class="tabbable-panel">
+                <div class="tabbable-line">
+                  <ul class="nav nav-tabs">
+                    <li class="active">
+                      <a href="#tab_default_1" data-toggle="tab" id="ant">
+                      Events </a>
+                    </li>
+                    <li>
+                      <a href="#tab_default_2" data-toggle="tab" id="ant1">
+                      Reservations</a>
+                    </li>
+                    <li>
+                      <a href="#tab_default_3" data-toggle="tab" id="ant2">
+                      Tasks</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-8 col-sm-8 col-md-8" id="bgcc1">
+              <ul class="event-list">
+                <li id="tabss">
+                  <div class="col-xs-3 col-sm-3 col-md-3" id="dis1">
+                    <p id="dats">21st May</p>
+                    <span id="dats1">12.45 p.m</span>
+                  </div>
+                  <div class="col-xs-5 col-sm-5 col-md-5">
+                    <div class="tbl">
+                      <p id="conf">Assign Someone for Task 1 </p>
+                    </div>
+                  </div>
+                  <div class="col-xs-4 col-sm-4 col-md-4">
+                    <button id="btn1"></button>
+                    <button id="btn2"></button>
+                    <span id="spn">New Task</span>
+                    <span id="spn1">Task Completed</span>
+                  </div>
+                </li> 
+                <li id="tabss1">
+                  <div class="col-xs-3 col-sm-3 col-md-3" id="dis1">
+                    <p id="dats2">21st May</p>
+                    <span id="dats3">12.45 p.m</span>
+                  </div>
+                  <div class="col-xs-5 col-sm-5 col-md-5">
+                    <p id="conf">Assign Plumber for Water Repair</p>
+                  </div>
+                  <div class="col-xs-4 col-sm-4 col-md-4">
+                    <button id="btn1"></button>
+                    <button id="btn2"></button>
+                    <span id="spn2">New Task</span>
+                    <span id="spn3">Task Completed</span>
+                  </div>
+                </li>
+                <li id="tabss2">
+                  <div class="col-xs-3 col-sm-3 col-md-3" id="dis1">
+                    <p id="dats4">21st May</p>
+                    <span id="dats5">10 a.m</span>
+                  </div>
+                  <div class="col-xs-5 col-sm-5 col-md-5">
+                    <p id="conf">Assign Someone for Task 1</p>
+                  </div>
+                  <div class="col-xs-4 col-sm-4 col-md-4">
+                    <button id="btn1"></button>
+                    <button id="btn2"></button>
+                    <span id="spn4">New Task</span>
+                    <span id="spn5">Task Completed</span>
+                  </div>
+                </li>  
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4" id="calsii">
+          <div id="calendar"></div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+              <h5 id="feeds">TASK FEED</h5>
+            </div>
+          </div>
+          <div id=exaa2>
+            <div class="tbl1">
+              <div class="row">
+                <p id="form3">2 hrs ago</p>
+                <div class="col-xs-2 col-sm-2 col-md-2" id="clr">
+                  <img src="images/Create.svg">  
+                </div>
+                <div class="col-xs-10 col-sm-10 col-md-10">
+                  <p id="form4">Task Completed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id=exa3>
+            <div id="exa2">
+              <div class="row">
+                <p id="form3">2 days ago</p>
+                <div class="col-xs-2 col-sm-2 col-md-2" id="clr1">
+                  <img src="images/Create.svg">
+                </div>
+                <div class="col-xs-10 col-sm-10 col-md-10">
+                  <p id="form4">Task Completed</p>
+                  <span>Laundry Pickup for 29th March,2017</span>
+                </div>
+              </div>
+            </div>
+            <div id="exa1">
+              <div class="row">
+                <p id="form3">2 days ago</p>
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" id="clr1">
+                  <img src="images/Ccancel.svg">
+                </div>
+                <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                  <p id="form5">Task Cancelled</p>
+                  <span>Laundry Pickup for 30th March,2017</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="js/hob.js"></script>
+
+
+
+ 
